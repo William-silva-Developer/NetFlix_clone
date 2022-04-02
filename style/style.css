@@ -1,0 +1,187 @@
+/*==============RESET==================*/
+:root {
+    --vermelho:#e50914;
+    --preto: #141414;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+    
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+header nav a:hover {
+    color: #fff;
+}
+/*===========================================*/
+
+.filme-principal {
+    font-size: 16px;
+    /*(ADCIONA UMA CAMADA ESCURA SOBRE A IMAGEM)background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url("https://houseofcardsbrasil.files.wordpress.com/2016/04/house_of_cards_season_3_cast.jpg");*/
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url("https://houseofcardsbrasil.files.wordpress.com/2016/04/house_of_cards_season_3_cast.jpg");
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.filme-principal .titulo {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 15%;
+
+
+}
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+   
+}
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+/*FORMATAÇÃO DO FOOTER*/
+
+.rodaper {
+    
+    height: 200px;
+    border-radius: 800px 800px 0px 0px;
+    border-style: groove;
+    border-color: #444;
+    
+
+}
+
+.rodaper  {
+   margin: 50px 20px;
+}
+
+.ms  h3 {
+    font-family: 'Arial Black',Times,serif;
+    font-size: 48px;
+    text-align: center;
+    
+}
+
+
+
+#listarFilmes  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#listarFilmes .alinhar {
+    display: flex;
+    align-content: space-around;
+    
+
+}
+
+
+/*efeito de zoom na lista de filmes*/
+#listarFilmes img{
+    position:relative;
+    display:flex;
+    margin:2rem 1rem;
+    width:auto;
+    height:300px;
+    border-radius:5px;
+    background-color:#EEE;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  #listarFilmes img:after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:#0CF;
+    opacity:0;
+    border-radius:5px;
+    box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index -1;
+  }
+  
+  #listarFilmes img:hover{
+    transform:scale(1.25,1.25);
+  }
+  
+  #listarFilmes img:hover::after{
+    opacity:1;
+  }
+/*=====================================================================*/
+
