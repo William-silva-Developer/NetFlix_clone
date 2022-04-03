@@ -113,15 +113,7 @@ header nav a:hover {
 
 /*FORMATAÇÃO DO FOOTER*/
 
-.rodaper {
-    
-    height: 200px;
-    border-radius: 800px 800px 0px 0px;
-    border-style: groove;
-    border-color: #444;
-    
 
-}
 
 .rodaper  {
    margin: 50px 20px;
