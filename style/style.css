@@ -2,6 +2,7 @@
 :root {
     --vermelho:#e50914;
     --preto: #141414;
+    --cinza: #26272b;
 }
 
 
@@ -52,7 +53,7 @@ header nav a:hover {
 .filme-principal {
     font-size: 16px;
     /*(ADCIONA UMA CAMADA ESCURA SOBRE A IMAGEM)background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url("https://houseofcardsbrasil.files.wordpress.com/2016/04/house_of_cards_season_3_cast.jpg");*/
-    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url("https://houseofcardsbrasil.files.wordpress.com/2016/04/house_of_cards_season_3_cast.jpg");
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url("https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/MOCYMEWU4ZO3JAIMP7YAMRDRT4.jpg");
     height: 600px;
     background-size: cover;
 
@@ -111,7 +112,7 @@ header nav a:hover {
     margin-top: 5px;
 }
 
-/*FORMATAÇÃO DO FOOTER*/
+/*FORMATAÇÃO DO FOOTER
 
 
 
@@ -125,6 +126,7 @@ header nav a:hover {
     text-align: center;
     
 }
+*/
 
 
 
@@ -143,6 +145,7 @@ header nav a:hover {
 
 
 /*efeito de zoom na lista de filmes*/
+
 #listarFilmes img{
     position:relative;
     display:flex;
@@ -175,5 +178,74 @@ header nav a:hover {
   #listarFilmes img:hover::after{
     opacity:1;
   }
-/*=====================================================================*/
+/*========================FOOTER=============================================*/
+
+.footer {
+    border-top-style: groove;
+    width: 100%;
+    height: 150px;
+    border-color: #444;
+    padding: 35px 30px;
+    margin-top: 150px;
+    
+}
+
+
+
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copyright-text {
+    color: var(--cinza);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+}
+
+.copyright-text a {
+    color: var(--cinza);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.copyright-text a:hover {
+    color: #aaa;
+}
+
+.col-md .social-icons {
+    display: flex;
+    gap: 30px;
+    
+}
+.social-icons 
+.facebook, 
+.github, 
+.linkedin {
+    color: #aaa;
+    padding: 10px;
+    border-radius: 100%;
+    background: #26272b;
+    
+}
+
+
+.facebook:hover {
+   
+    background: rgb(73, 83, 199);
+  
+}
+.github:hover {
+
+    background: #0d0d0d;
+    
+}
+
+.linkedin:hover {
+
+    background: rgb(19, 34, 136);
+}
 

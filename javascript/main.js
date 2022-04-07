@@ -59,3 +59,6 @@ for (var i = 0; i < listaFilmes.length; i++) {
     list.innerHTML =  list.innerHTML + filmes
     
  }
+
+
+ 
